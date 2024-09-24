@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Yash Jajoo
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{#2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% \newcommand{\resumeProjectHeadingTwo}[3]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+%       \small#1 & \small#2 & \small#3 \\
+%     \end{tabular*}\vspace{-7pt}
+% }
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yash Jajoo} \\ \vspace{1pt}
+    \small 716 (368)-8162 $|$ \href{mailto:yashjajo@buffalo.edu}{\underline{yashjajo@bufflo.edu}} $|$ 
+    \href{https://linkedin.com/in/restacksyj}{\underline{linkedin.com/in/restacksyj}} $|$
+    \href{https://github.com/restacksyj}{\underline{github.com/restacksyj}} $|$
+    \href{https://restacksyj.com}{\underline{restacksyj.com}} 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University at Buffalo, The State University of New York}{August 2024 -- December 2025}
+      {Masters of Science, Computer Science}{Buffalo, New York}
+    \resumeSubheading
+      {Sinhgad Institute Of Technology, Lonavala}{August 2017 -- May 2021}
+      {Bachelor of Engineering, Computer Science}{Pune, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+            \textbf{Languages}{: Python, Golang, Typescript, Javascript, Dart, Rust, C, C++, HTML/CSS, PHP, Lua } \\ \textbf{Databases}{: MySQL, MongoDB, PostgreSQL, BigQuery, Redis} \\ \textbf{Frameworks/Others}{: Apache Kafka, Kubernetes, Docker, AWS, GCP, Git, React, Azure, NodeJS, Flask, PyTorch, Spring Boot, Grafana, Nginx, GitOps, Debezium, Astro, Linux, Neovim, Jupyter Notebook }}}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Freightify}{August 2021 -- July 2024}
+      {Software Development Engineer 2 $|$ Golang, NodeJS, MongoDB, AWS, React}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Scaled multiple products to support thousands of users, maintaining various microservices and employing modern
+        tech-stacks such as \textbf{gRPC}, Golang, and NodeJS to develop highly available systems with \textbf{99.5\% uptime.}}
+        \resumeItem{Modernized infrastructure by transitioning from traditional AWS EC2 to \textbf{Kubernetes} and Google Cloud Platform
+        (GCP), improving scalability and \textbf{reducing deployment time by 40\%} through automated container orchestration and efficient resource management.}
+        \resumeItem{Developed full-stack applications using the MERN stack, building internal tools that increased operational
+        \textbf{efficiency by 30\%} and enhanced product management within the company.}
+        \resumeItem{Implemented \textbf{ETL} pipeline using \textbf{distributed systems} such as \textbf{Kafka} and Debezium to stream real-time changes in the database and visualizing it in \textbf{Grafana} dashboards.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Occipital Tech}{October 2019 -- December 2019}
+      {Android App Developer $|$ Flutter, Java}{Mumbai, India}
+      \resumeItemListStart
+        \resumeItem{
+Engineered an Android and iOS application to empower farmers in identifying and grading commodity samples.}
+\resumeItem{Implemented real-time analysis of features using \textbf{OpenCV} on Android to \textbf{optimize accuracy by 20\%.}} 
+        \resumeItem{Designed an intuitive user interface to enhance \textbf {user engagement by 30\%} and streamlined the grading process.}
+    \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Freightbro Logistics}{August 2018 -- March 2019}
+      {Android/iOS Developer Intern $|$ Flutter, Swift, Kotlin, Dart}{Mumbai, India}
+      \resumeItemListStart
+      \resumeItem{Developed a logistics management Android app using Flutter, incorporating RxDart for \textbf{efficient state management} and \textbf{reactive programming}. The app facilitated real-time shipment tracking, order management, and notifications, ensuring a smooth user experience across devices.}
+      \resumeItem{ Implemented complex \textbf{client-side logic with caching} to enhance application functionality and performance. }
+        \resumeItem{Streamlined authentication processes and deployment workflows using Firestore and \textbf{CircleCI}, reducing deployment time by 45\% and improving overall app management efficiency.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+  {\textbf{Lyrik} $|$ \emph{Flutter, NodeJS, Firebase} $|$ 
+   \href{https://play.google.com/store/apps/details?id=com.buildjuice.lyriks\&hl=en\_US}{\underline{Play Store Link}}}
+  {Dec 2019 -- Present}
+          \resumeItemListStart
+          \resumeItem{Engineered the Lyrik Android app, enabling users to search, view, and save song lyrics across various music genres. Implemented \textbf{offline} functionality using \textbf{SQLite} for seamless access without internet connectivity.}
+            \resumeItem{
+                Over \textbf{50,000+} downloads on the Google Play Store.
+}
+            \resumeItem{
+                 Implemented real-time lyrics display, and playlist management features using Flutter and Dart; optimized performance and enhanced UI/UX, resulting in a \textbf{4.8-star} rating on the Google Play Store within three months of launch.	
+}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Speech Emotion Detection} $|$ \emph{Python, PyTorch, scikit-learn, CNN}}{Dec 2020 -- May 2021}
+          \resumeItemListStart
+          \resumeItem{Utilized \textbf{LSTM and CNN} models to predict speech emotional states and classify them into six categories.}
+            \resumeItem{Preprocessed raw audio data by extracting relevant features such as MFCC, pitch, and spectral contrast.}
+            \resumeItem{Deployed the model on a website for practical emotion detection using real-time audio.}
+            % \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+
+% \\ \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+      % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+
+%  REST API, FastAPI, Django, Apache Kafka, Airflow, Git, React, NodeJS, AWS, Redux, Webpack,
+% Flask, MQTT, Azure, GraphQL, PyTorch, Tensorflow, Azure, Nginx, GCP, CI/CD, Docker, Kubernetes, Linux
+
+%-------------------------------------------
+\end{document}
+
