@@ -15,5 +15,6 @@ Archieve/
 *.cb2
 .*.lb
 
+
 # github action result
 semicolon_delimited_script
